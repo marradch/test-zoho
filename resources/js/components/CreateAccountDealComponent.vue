@@ -4,7 +4,7 @@
     </div>
 
     <div v-if="success" class="alert alert-success mt-2" role="alert">
-        Account & Deal sucessfully created
+        Account & Deal successfully created
     </div>
 
     <div class="row justify-content-center mt-2">
