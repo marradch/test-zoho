@@ -128,7 +128,7 @@ export default {
                 .then(function (response) {
                     if (response.data.status == 'success') {
                         component.success = true;
-                        this.accountDeal = {
+                        component.accountDeal = {
                             dealName: '',
                             dealStage: '',
                             accountName: '',
