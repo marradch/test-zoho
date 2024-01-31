@@ -23,10 +23,10 @@ class AccountAndDealRequest extends FormRequest
     {
         return [
             'dealName' => 'required|string',
-            'dealStage' => 'required|string',
+            'dealStage' => 'nullable|string',
             'accountName' => 'required|string',
-            'accountWebsite' => 'required|url',
-            'accountPhone' => 'required|string',
+            'accountWebsite' => 'nullable|url',
+            'accountPhone' => 'nullable|string',
         ];
     }
 }

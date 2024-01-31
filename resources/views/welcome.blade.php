@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="app" class="container">
-    <example-component></example-component>
+    <create-account-deal-component></create-account-deal-component>
 </div>
 </body>
 @vite('resources/js/app.js')

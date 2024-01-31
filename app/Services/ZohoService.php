@@ -28,7 +28,7 @@ class ZohoService
         if(isset($response->json()['data'][0]['details']['id'])) {
             $accountId = $response->json()['data'][0]['details']['id'];
         } else {
-            throw new \Exception('Account did not created');
+            throw new \Exception('Account did not create');
         }
 
         $response = Http::withHeader('Authorization', "Zoho-oauthtoken {$authData['access_token']}")
@@ -43,7 +43,7 @@ class ZohoService
             ]);
 
         if(empty($response->json()['data'][0]['details']['id'])) {
-            throw new \Exception('Deal did not created');
+            throw new \Exception('Deal did not create');
         }
     }
 }
